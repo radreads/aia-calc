@@ -21,6 +21,8 @@ import {
     buyNetWealth: number;
     rentNetWealth: number;
     wealthDifference: number;
+    downPayment: number;
+    monthlyMortgagePayment: number;
   }
   
   function calculateMortgagePayment(principal: number, monthlyInterestRate: number, numberOfPayments: number): number {
@@ -98,6 +100,8 @@ import {
         buyNetWealth,
         rentNetWealth,
         wealthDifference: buyNetWealth - rentNetWealth,
+        downPayment: downPaymentAmount,
+        monthlyMortgagePayment: monthlyMortgagePayment,
       });
     }
   
